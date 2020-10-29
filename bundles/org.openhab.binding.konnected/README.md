@@ -93,4 +93,6 @@ Thing konnected:module:generic "Konnected Module" [ipAddress="http://192.168.30.
    Type temperature : temperature "DS18B20 Temperature" [channel_zone=1, tempsensorType = false, pollinterval = 1, ds18b20_address = "XX:XX:XX:XX:XX:XX:XX"]
 }
 ```
-
+### Notes-
+* The ipAddress is the IP of the IP assigned to the Konnected module. The port is different for each Konnected board, so you have to use the one specific to your board.
+* The "macAddress" field IS NOT the macAddress of the Konnected board. You need to enter the "Device ID" you find on your Konnected moudule status page. This should be a 12 character hexadecimal string.
